@@ -152,7 +152,7 @@ const Index = () => {
             </div>
             
             <div className="container mx-auto px-4 text-center relative z-10 animate-fade-in">
-              <h2 className="text-7xl md:text-9xl font-bold mb-6 tracking-tighter">
+              <h2 className="text-7xl md:text-9xl font-bold mb-6 tracking-tighter text-gold">
                 περίπατος
               </h2>
               <p className="text-2xl md:text-3xl text-muted-foreground mb-4 font-light">
@@ -176,7 +176,7 @@ const Index = () => {
         {activeSection === 'concept' && (
           <section className="py-20 animate-fade-in">
             <div className="container mx-auto px-4">
-              <h2 className="text-5xl font-bold mb-12 text-center">Философия Аристотеля</h2>
+              <h2 className="text-5xl font-bold mb-12 text-center text-gold">Философия Аристотеля</h2>
               
               <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <Card className="bg-card/50 backdrop-blur border-primary/20">
@@ -250,7 +250,7 @@ const Index = () => {
         {activeSection === 'menu' && (
           <section className="py-20 animate-fade-in">
             <div className="container mx-auto px-4">
-              <h2 className="text-5xl font-bold mb-4 text-center">Философское меню</h2>
+              <h2 className="text-5xl font-bold mb-4 text-center text-gold">Философское меню</h2>
               <p className="text-center text-muted-foreground mb-12 text-lg">
                 Каждое блюдо — воплощение философской концепции
               </p>
@@ -306,18 +306,22 @@ const Index = () => {
                         {item.special && (
                           <CardContent>
                             <div className="space-y-4">
-                              <div className="aspect-video bg-gradient-to-br from-secondary/20 via-background to-primary/20 rounded-lg overflow-hidden relative group">
+                              <div className="aspect-video bg-gradient-to-br from-accent/30 via-background to-primary/30 rounded-lg overflow-hidden relative group border-2 border-accent/20">
                                 <img 
-                                  src="https://cdn.poehali.dev/projects/f5bb4253-6a16-4628-bb29-934752aec7da/files/1abbe1f9-18b6-402d-b6f9-80ea03ef70ff.jpg"
-                                  alt="Стейк Золотая середина с золотыми акцентами"
-                                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                  src="https://cdn.poehali.dev/projects/f5bb4253-6a16-4628-bb29-934752aec7da/files/e60ac72c-b933-4882-a930-0260c1270879.jpg"
+                                  alt="Футуристический золотой стейк Золотая середина"
+                                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
-                                <div className="absolute top-4 right-4 bg-secondary/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
-                                  <span className="text-xs font-semibold text-background flex items-center gap-1">
-                                    <Icon name="Sparkles" size={14} />
-                                    Сигнатурное блюдо
+                                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />
+                                <div className="absolute inset-0 bg-gradient-radial from-accent/10 via-transparent to-transparent animate-pulse" />
+                                <div className="absolute top-4 right-4 bg-gradient-to-r from-accent to-secondary backdrop-blur-sm px-4 py-2 rounded-full shadow-lg shadow-accent/50">
+                                  <span className="text-xs font-bold text-background flex items-center gap-2">
+                                    <Icon name="Sparkles" size={16} className="animate-pulse" />
+                                    ЗОЛОТАЯ СЕРЕДИНА
                                   </span>
+                                </div>
+                                <div className="absolute bottom-4 left-4 right-4 text-center">
+                                  <p className="text-accent font-semibold text-sm tracking-wide">Философия совершенства в каждом кусочке</p>
                                 </div>
                               </div>
                               
@@ -412,7 +416,7 @@ const Index = () => {
         {activeSection === 'gallery' && (
           <section className="py-20 animate-fade-in">
             <div className="container mx-auto px-4">
-              <h2 className="text-5xl font-bold mb-4 text-center">Галерея</h2>
+              <h2 className="text-5xl font-bold mb-4 text-center text-gold">Галерея</h2>
               <p className="text-center text-muted-foreground mb-12 text-lg">
                 Визуальное воплощение философских концепций
               </p>
@@ -488,7 +492,7 @@ const Index = () => {
           <section className="py-20 animate-fade-in">
             <div className="container mx-auto px-4">
               <div className="max-w-2xl mx-auto">
-                <h2 className="text-5xl font-bold mb-4 text-center">Бронирование</h2>
+                <h2 className="text-5xl font-bold mb-4 text-center text-gold">Бронирование</h2>
                 <p className="text-center text-muted-foreground mb-12 text-lg">
                   Присоединитесь к философскому путешествию
                 </p>
@@ -592,7 +596,7 @@ const Index = () => {
         {activeSection === 'contacts' && (
           <section className="py-20 animate-fade-in">
             <div className="container mx-auto px-4">
-              <h2 className="text-5xl font-bold mb-4 text-center">Контакты</h2>
+              <h2 className="text-5xl font-bold mb-4 text-center text-gold">Контакты</h2>
               <p className="text-center text-muted-foreground mb-12 text-lg">
                 Найдите нас в пространстве и времени
               </p>

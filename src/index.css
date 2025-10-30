@@ -8,6 +8,7 @@
   :root {
     --background: 140 20% 8%;
     --foreground: 45 90% 85%;
+    --gold: 43 100% 60%;
 
     --card: 140 15% 12%;
     --card-foreground: 45 85% 80%;
@@ -64,6 +65,18 @@
   h5,
   h6 {
     font-family: "Montserrat", sans-serif;
+  }
+
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
   }
 }
 
