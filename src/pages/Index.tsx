@@ -306,13 +306,19 @@ const Index = () => {
                         {item.special && (
                           <CardContent>
                             <div className="space-y-4">
-                              <div className="aspect-video bg-gradient-to-br from-primary/30 via-background/50 to-secondary/30 rounded-lg overflow-hidden relative">
+                              <div className="aspect-video bg-gradient-to-br from-secondary/20 via-background to-primary/20 rounded-lg overflow-hidden relative group">
                                 <img 
-                                  src="https://cdn.poehali.dev/projects/f5bb4253-6a16-4628-bb29-934752aec7da/files/ddeadf6e-6d38-4818-9b5e-fcdd92849815.jpg"
-                                  alt="Золотая середина - визуализация"
-                                  className="w-full h-full object-cover opacity-70 mix-blend-luminosity"
+                                  src="https://cdn.poehali.dev/projects/f5bb4253-6a16-4628-bb29-934752aec7da/files/1abbe1f9-18b6-402d-b6f9-80ea03ef70ff.jpg"
+                                  alt="Стейк Золотая середина с золотыми акцентами"
+                                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+                                <div className="absolute top-4 right-4 bg-secondary/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                                  <span className="text-xs font-semibold text-background flex items-center gap-1">
+                                    <Icon name="Sparkles" size={14} />
+                                    Сигнатурное блюдо
+                                  </span>
+                                </div>
                               </div>
                               
                               <div className="prose prose-sm max-w-none">
