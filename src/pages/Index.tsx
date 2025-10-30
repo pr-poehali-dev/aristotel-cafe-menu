@@ -306,11 +306,11 @@ const Index = () => {
                         {item.special && (
                           <CardContent>
                             <div className="space-y-4">
-                              <div className="aspect-video bg-gradient-to-br from-accent/30 via-background to-primary/30 rounded-lg overflow-hidden relative group border-2 border-accent/20">
+                              <div className="aspect-video bg-gradient-to-br from-accent/30 via-background to-primary/30 rounded-lg overflow-hidden relative group border-2 border-accent/30 shadow-2xl shadow-accent/20">
                                 <img 
-                                  src="https://cdn.poehali.dev/projects/f5bb4253-6a16-4628-bb29-934752aec7da/files/e60ac72c-b933-4882-a930-0260c1270879.jpg"
-                                  alt="Футуристический золотой стейк Золотая середина"
-                                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                  src="https://cdn.poehali.dev/projects/f5bb4253-6a16-4628-bb29-934752aec7da/files/9a7bc5ee-eeaf-4837-86ca-e150c289a513.jpg"
+                                  alt="Золотой стейк Золотая середина из чистого золота"
+                                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:rotate-1"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />
                                 <div className="absolute inset-0 bg-gradient-radial from-accent/10 via-transparent to-transparent animate-pulse" />
