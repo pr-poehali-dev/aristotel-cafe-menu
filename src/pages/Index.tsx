@@ -289,7 +289,7 @@ const Index = () => {
                         key={idx} 
                         className={`backdrop-blur transition-all ${
                           item.special 
-                            ? 'bg-gradient-to-r from-primary/20 via-card/50 to-secondary/20 border-primary/50 hover:border-primary' 
+                            ? 'bg-gradient-to-r from-primary/20 via-card/50 to-secondary/20 border-secondary/50 hover:border-secondary' 
                             : 'bg-card/50 border-primary/20 hover:border-primary/40'
                         }`}
                       >
@@ -303,6 +303,53 @@ const Index = () => {
                           </div>
                           <CardDescription className="text-base leading-relaxed">{item.description}</CardDescription>
                         </CardHeader>
+                        {item.special && (
+                          <CardContent>
+                            <div className="space-y-4">
+                              <div className="aspect-video bg-gradient-to-br from-primary/30 via-background/50 to-secondary/30 rounded-lg overflow-hidden relative">
+                                <img 
+                                  src="https://cdn.poehali.dev/projects/f5bb4253-6a16-4628-bb29-934752aec7da/files/ddeadf6e-6d38-4818-9b5e-fcdd92849815.jpg"
+                                  alt="Золотая середина - визуализация"
+                                  className="w-full h-full object-cover opacity-70 mix-blend-luminosity"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+                              </div>
+                              
+                              <div className="prose prose-sm max-w-none">
+                                <h4 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                                  <Icon name="BookOpen" className="text-secondary" size={20} />
+                                  Философия блюда
+                                </h4>
+                                <div className="space-y-3 text-muted-foreground">
+                                  <p className="leading-relaxed">
+                                    <span className="text-secondary font-medium">«Добродетель есть среднее между двумя крайностями, одна из которых — излишество, а другая — недостаток»</span> — это основа блюда. Каждый ингредиент тщательно взвешен для создания идеального баланса.
+                                  </p>
+                                  <p className="leading-relaxed">
+                                    Стейк готовится при точной температуре, избегая как недожаренности, так и пересушивания. Специи добавлены в такой пропорции, что ни одна не доминирует — воплощение принципа <span className="text-accent font-medium">«щедрость — середина между расточительством и скупостью»</span>.
+                                  </p>
+                                  <p className="leading-relaxed">
+                                    Гарнир и соус подобраны так, чтобы дополнять мясо, не перекрывая его вкус. Это блюдо — не просто еда, а <span className="text-primary font-medium">философский урок о поиске гармонии</span> в каждом аспекте жизни.
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div className="grid md:grid-cols-3 gap-3 mt-4">
+                                <div className="p-3 bg-background/50 rounded-lg border border-border/50">
+                                  <p className="text-sm font-medium text-secondary mb-1">Баланс вкуса</p>
+                                  <p className="text-xs text-muted-foreground">Ни сладко, ни остро — идеальная середина</p>
+                                </div>
+                                <div className="p-3 bg-background/50 rounded-lg border border-border/50">
+                                  <p className="text-sm font-medium text-accent mb-1">Гармония текстур</p>
+                                  <p className="text-xs text-muted-foreground">Нежность и упругость в равновесии</p>
+                                </div>
+                                <div className="p-3 bg-background/50 rounded-lg border border-border/50">
+                                  <p className="text-sm font-medium text-primary mb-1">Умеренность порции</p>
+                                  <p className="text-xs text-muted-foreground">Достаточно, чтобы насытить, не переедая</p>
+                                </div>
+                              </div>
+                            </div>
+                          </CardContent>
+                        )}
                       </Card>
                     ))}
                   </div>
